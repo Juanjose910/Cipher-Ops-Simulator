@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cipher Ops Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top status bar -->
+    <header id="hud" class="hidden">
+      <div class="hud-item"><span class="hud-label">DÍA</span><span id="hud-day">1</span><span class="hud-sub">/7</span></div>
+      <div class="hud-item"><span class="hud-label">REPUTACIÓN</span><span id="hud-rep">0</span></div>
+      <div class="hud-item"><span class="hud-label">PUNTOS</span><span id="hud-score">0</span></div>
+      <div class="hud-item"><span class="hud-label">ENERGÍA</span>
+        <div class="energy-bar"><div id="hud-energy-fill"></div></div>
+      </div>
+    </header>
+
+    <!-- Main screen container -->
+    <main id="screen"></main>
+
+    <footer id="credits">Cipher Ops Simulator · operación ficticia · todo el contenido es educativo</footer>
+  </div>
+
+  <script src="ciphers.js"></script>
+  <script src="missions.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

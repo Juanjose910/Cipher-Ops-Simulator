@@ -7,16 +7,28 @@ incidentes cuyo mensaje está cifrado (César, Atbash, Base64, Hex, Binario,
 Morse, Vigenère, XOR y capas combinadas). Descífralos para ganar puntos,
 reputación y tu rango final. Las pistas y los errores gastan energía.
 
-## Cómo jugar
+El diseño es **responsive**: se adapta a móvil, tablet y escritorio (HUD fijo,
+botones grandes para el dedo, sin zoom involuntario).
 
-No necesita instalación ni dependencias. Tienes dos opciones:
+## Jugar online (GitHub Pages)
 
-1. **Abrir directamente:** descarga el repo y abre `index.html` en tu navegador
-   (doble clic).
-2. **Servidor local** (recomendado, evita restricciones del navegador):
+Activación única (un clic, solo el dueño del repo puede hacerlo):
+
+1. Ve a **Settings → Pages** del repositorio.
+2. En **Build and deployment → Source**, elige **Deploy from a branch**.
+3. Selecciona la rama `claude/cipher-ops-simulador-playable-1ihqcl` y la carpeta
+   `/ (root)`. Pulsa **Save**.
+4. Espera ~1 min. El juego quedará publicado en:
+   **https://juanjose910.github.io/Cipher-Ops-Simulator/**
+
+## Jugar sin publicar (local)
+
+No necesita instalación ni dependencias:
+
+1. **Abrir directamente:** descarga el repo y abre `index.html` en tu navegador.
+2. **Servidor local** (recomendado):
 
    ```bash
-   # con Python instalado:
    python3 -m http.server 8000
    # luego abre http://localhost:8000
    ```
